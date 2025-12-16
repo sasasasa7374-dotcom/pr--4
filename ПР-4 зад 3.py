@@ -2,11 +2,11 @@ class BankAccount:
     def _init_(self, initial_balance=0):
         self.__balance = initial_balance
 
-    def deposit(self, amount):
+    def replenishment(self, amount):
         if amount > 0:
             self.__balance += amount
         else:
-            raise Error("Сумма депозита должна быть положительной.")
+            raise Error("Сумма пополнения должна быть положительной.")
 
     def withdraw(self, amount):
         if amount > self.__balance:
