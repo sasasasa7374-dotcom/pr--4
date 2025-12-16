@@ -12,15 +12,15 @@ class Worker(ABC):
 
 class Programmer(Worker):
     def work(self):
-        return "Writing code"
+        return "Написание кода"
 
     def rest(self):
-        return "Taking a coffee break"
+        return "делаю перерыв на кофе"
 
 
-class Designer(Worker):
+class Designer(Worker): 
     def work(self):
-        return "Creating mockups"
+        return "создаем макеты"
 
     def rest(self):
-        return "Sketching for fun"
+        return "Рисуем для удовольствия"
