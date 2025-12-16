@@ -1,19 +1,21 @@
-class BankAccount:
-    def init(self, initial_balance=0):
-        self.__balance = initial_balance
-
-    def deposit(self, amount):
-        if amount > 0:
-            self.__balance += amount
-        else:
-            raise ValueError("Deposit amount must be positive")
-
-    def withdraw(self, amount):
-        if amount > self.__balance:
-            raise ValueError("Insufficient funds")
-        if amount <= 0:
-            raise ValueError("Withdrawal amount must be positive")
-        self.__balance -= amount
-
-    def get_balance(self):
-        return self.__balance
+class Player:
+    def __init__(self):
+        self.__xp = 0
+    def raise_score(self, amount):
+        if amount < 0:
+            print("Ошибка: нельзя добавить отрицательное число очков")
+            return
+        
+        self.__xp += amount
+        print(f"Добавлено {amount} очков. Теперь у вас {self.__xp} очков")
+    
+    def take_score(self, amount):
+        if amount < 0:
+            print("Ошибка: нельзя вычесть отрицательное число очков")
+            return
+        if amount > self.__xp:
+            print(f"Ошибка: у вас только {self.__xp} очков, а хотите вычесть {amount}")
+            return
+        
+        self.__xp -= amount
+        print(f"Вычтено {amount} очков. Осталось {self.__xp} очков")
