@@ -1,4 +1,4 @@
-class Worker(ABC):
+class Worker(self):
     def work(self):
         pass
     def rest(self):
@@ -16,4 +16,4 @@ class Designer(Worker):
         return "создаем Графический дизайн"
 
     def rest(self):
-        return "создаем для удовольствия"
+        return "создаем дизайн для удовольствия"
