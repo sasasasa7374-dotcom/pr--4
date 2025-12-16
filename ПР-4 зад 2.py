@@ -6,14 +6,14 @@ class Worker(self):
         
 class Programmer(Worker):
     def work(self):
-        return "Написание кода"
+        return "пишу код"
 
     def rest(self):
         return "делаю перерыв на кофе"
 
 class Designer(Worker): 
     def work(self):
-        return "создаем Графический дизайн"
+        return "создаю Графический дизайн"
 
     def rest(self):
-        return "создаем дизайн для удовольствия"
+        return "создаю дизайн для удовольствия"
