@@ -1,9 +1,11 @@
-class Worker(self):
+class Worker:
     def work(self):
         pass
+    
     def rest(self):
         pass
-        
+
+
 class Programmer(Worker):
     def work(self):
         return "пишу код"
@@ -11,7 +13,8 @@ class Programmer(Worker):
     def rest(self):
         return "делаю перерыв на кофе"
 
-class Designer(Worker): 
+
+class Designer(Worker):
     def work(self):
         return "создаю Графический дизайн"
 
