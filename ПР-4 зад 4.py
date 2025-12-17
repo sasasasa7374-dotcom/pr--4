@@ -10,7 +10,7 @@ class Player:
         self.__xp += amount
         print(f"Добавлено {amount} очков. Теперь у вас {self.__xp} очков")
     
-    def Reduce points (self, amount):
+    def Reduce_score(self, amount):
         if amount < 0:
             print("Ошибка: нельзя вычесть отрицательное число очков")
             return
